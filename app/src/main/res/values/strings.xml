@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CAFlagApp</string>
+    <string name="helloString">Hello</string>
+    <string name="spin_message">Rotate</string>
+</resources>
