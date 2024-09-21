@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imgView = findViewById(R.id.img1);
         sw = findViewById(R.id.sw1);
-        sw.setOnCheckedChangeListener( (btn, isChecked) -> {
-        });
+
 
         sw.setOnCheckedChangeListener((buttonView, isChecked) -> {
 
@@ -33,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
                 rotate.setRepeatCount(Animation.INFINITE);
                 rotate.setInterpolator(new LinearInterpolator());
                 imgView.startAnimation(rotate);
+            }
+            else
+            {
+
+                imgView.clearAnimation();
+
             }
 
         });
